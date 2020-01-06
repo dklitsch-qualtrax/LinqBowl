@@ -37,7 +37,7 @@ namespace LinqBowl
 
         static int ScoreSpare(int index, List<int> game)
         {
-            return game.GetRange(index, 2).Sum() + 10;
+            return game[index + 3] + 10;
         }
     }
 }
